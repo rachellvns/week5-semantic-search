@@ -1,0 +1,19 @@
+Virtual Medication Review
+
+Consult ID:
+TM-2026-0010
+
+Benjamin D.
+57 years
+
+Purpose:
+Repeat prescription request.
+
+Current medication:
+Atorvastatin 20 mg nightly.
+
+Patient denies adverse effects.
+
+Prescription renewed for 3 months.
+
+Repeat lipid profile before next appointment.

@@ -1,0 +1,23 @@
+Telemedicine Visit
+
+ID TM20260006
+
+John T
+63/M
+
+Follow-up for Type 2 Diabetes.
+
+Patient reports: glucose readings mostly between
+6.5–7.8 mmol/L.
+
+Medication adherence good.
+
+Walking 30 mins/day.
+
+Assessment:
+Diabetes currently stable.
+
+PLAN:
+Repeat HbA1c in 3 months.
+Continue Metformin.
+Diet reinforced.

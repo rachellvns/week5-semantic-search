@@ -1,0 +1,24 @@
+Medication Review
+
+Case ID: TM-0019
+Date: 03 Aug 2026
+
+Mr Kevin L, 61 years old
+
+Reason: blood pressure follow-up
+
+Home BP readings mostly around 128-135/75-82.
+Taking amlodipine 5 mg once a day.
+No dizziness or ankle swelling.
+Walking most evenings.
+
+Assessment:
+Hypertension, well controlled.
+
+Plan:
+Continue current medication.
+Reduce salt intake.
+Keep monitoring BP at home.
+
+Repeat renal profile before next review.
+Review again in 3 months.

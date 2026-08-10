@@ -1,0 +1,24 @@
+Virtual Consultation Record
+
+ID: TM-2026-0003
+
+Patient Name:
+Emma R.
+
+Gender:
+Female
+
+Reason for visit
+Sneezing, itchy eyes and blocked nose.
+
+History
+Symptoms present approximately one week.
+Worse outdoors.
+Known seasonal allergies.
+
+Diagnosis
+Allergic rhinitis
+
+Treatment
+Continue cetirizine 10 mg OD.
+Avoid pollen exposure where possible.

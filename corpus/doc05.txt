@@ -1,0 +1,27 @@
+Consult Summary
+
+Ref: TM 0005
+Date = 21 May 2026
+
+Patient
+Olivia S.
+24 F
+
+Reason:
+Acne follow-up
+
+Current treatment:
+- Adapalene nightly
+- Moisturiser daily
+
+Progress:
+✓ Less inflammation
+✓ Fewer breakouts
+× Mild dryness
+
+Assessment:
+Improving.
+
+Next Steps:
+Continue same regimen.
+Review in 8 weeks.

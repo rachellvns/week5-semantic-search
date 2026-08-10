@@ -1,0 +1,44 @@
+Telemedicine Consultation Record
+
+Consultation ID: TM-2026-0015
+Date: 22 Mar 2026
+
+Patient Information:
+Name: Adam R.
+Age: 6.5 months
+Sex: Male
+
+Chief Complaint:
+Fever and reduced feeding for 2 days.
+
+History:
+Mother reports that the patient developed fever yesterday evening with a maximum temperature of 38.5°C.
+The baby has been feeding less than usual but is still taking some breast milk.
+No vomiting, diarrhoea, rash, or breathing difficulty reported.
+No known sick contacts.
+Immunisations are up to date.
+
+Clinical Assessment:
+Infant appears alert and responsive during video consultation.
+Mild irritability noted by caregiver.
+No signs of respiratory distress observed.
+
+Assessment:
+Likely viral upper respiratory tract infection.
+Condition appears stable.
+
+Medication:
+Paracetamol 120 mg/5 mL suspension.
+Dose: 2.5 mL.
+Frequency: PRN for fever.
+Duration: 3 days.
+Additional instructions: Give after feeding.
+
+Plan:
+Encourage adequate fluid intake.
+Monitor temperature and feeding pattern.
+Continue breastfeeding.
+
+Follow Up:
+Timeframe: 48 hours.
+Instructions: Return to clinic if fever persists or symptoms worsen.

@@ -1,0 +1,23 @@
+Consultation Record
+
+Ref TM-2026-0012
+
+Patient:
+Lucas A.
+
+Male
+29 yrs
+
+Complaint:
+Diarrhoea x2 days.
+
+Assessment:
+Likely viral gastroenteritis.
+
+Advice:
+Increase oral fluids.
+Oral rehydration salts.
+Seek urgent care if blood in stool, persistent vomiting or dehydration develops.
+
+Provider:
+Dr. J. Tan
