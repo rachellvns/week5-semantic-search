@@ -21,5 +21,5 @@ def explain_match(query: str, doc_text: str):
         print(f"{score:.3f}  {sentence}")
 
 # Example usage
-doc_text = open("corpus/doc17.txt").read()
-explain_match("no signs of throwing up, loose stools, skin irritation, or trouble breathing", doc_text)
+doc_text = open("corpus/doc04.txt").read()
+explain_match("相比于维持睡眠，我更难入睡", doc_text)

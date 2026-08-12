@@ -11,7 +11,8 @@ for n, p in enumerate(sorted(Path("corpus").glob("*.*"))):
         id=n,
         vector=models.Document(text=text, model=MODEL),
         payload={"text": text, "source":p.name,
-                 "type": p.suffix.lstrip(".")}
+                 "type": p.suffix.lstrip("."),
+                 "user_id": "userA" if n % 2 == 0 else "userB"}
         ))
     client.upsert("docs", points=points)
     print(f"indexed: {len(points)} documents")
