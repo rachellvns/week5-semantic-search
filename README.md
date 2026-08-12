@@ -43,3 +43,31 @@ The English query correctly and confidently retrieved a relevant document (doc17
 'bge-small-en-v1.5' was trained exclusively on English text, so it has no learned representation aligning non-English queries with semantically equivalent English content. The results above confirmed this, where both non-English queries not only scored lower than their English equivalents, but were driven by arbitrary sentence matches (patient names, unrelated administrative text) rather than any real understanding of query meaning.  
 
 'bge-m3', by contrast, is explicitly trained as a multilingual model across 100+ languages, including cross-lingual retrieval objectives where a query in one language is trained to embed close to matching content in another. Based on this corpus's results, switching to 'bge-m3' would likely be necessary for any production telehealth use case serving Bahasa Indonesia/Melayu or Chinese-speaking patients, since the current model's cross-language retrieval is effectively non-functional.
+
+## Filter drill
+Scenario: Each indexed document was assigned a 'user_id' ("userA" or "userB", alternating by document index) in its Qdrant payload, simulating a two-user corpus for access-control testing.
+
+### How each document got a 'user_id'
+Document access:
+user A (12 files): doc01.txt, doc02.txt, doc03.txt, doc04_copy.md, doc06.txt, doc08.txt, doc10.txt, doc12.txt, doc14.txt, doc16.txt, doc18.txt, doc20.txt  
+
+user B (11 files): doc01_copy.md, doc02_copy.md, doc04.txt, doc05.txt, doc07.txt, doc09.txt, doc11.txt, doc13.txt, doc15.txt, doc17.txt, doc19.txt  
+
+This produces a roughly even, reproducible 50/50 split across all 23 documents, simulating two separate users' document sets without needing real multi-user data.  
+
+### Where 'user_id' lives
+Each document's user_id is stored as a field in its Qdrant payload (metadata attached to the vector), alongside the existing text, source, and type fields:  
+
+payload={"text": text, "source": p.name,  
+         "type": p.suffix.lstrip("."),  
+         "user_id": "userA" if n % 2 == 0 else "userB"}
+
+### How a search is restricted to one user
+A Qdrant Filter is built specifying that the 'user_id' field must equal a given value:  
+
+flt = models.Filter(must=[models.FieldCondition(  
+    key="user_id", match=models.MatchValue  
+    (value="userA"))])  
+
+This filter is passed into query_points() via query_filter=flt.  
+Unlike a ranking boost or preference, this is a hard constraint: Qdrant excludes any point whose payload doesn't satisfy the filter before returning results regardless of how high that point's semantic similarity score is.
